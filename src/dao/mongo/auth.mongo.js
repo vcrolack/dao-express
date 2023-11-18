@@ -1,16 +1,20 @@
 import contactsModel from './models/Contacts.js'
 
-export default class Contacts {
+export default class Auth {
     constructor() {
 
     }
 
-    get = async () => {
+    register = async () => {
         let contacts = await contactsModel.find()
         return contacts
     }
 
-    create = async (contact) => {
+    login = async (contact) => {
         const newContact = await contactsModel.create({contact})
     } 
+
+    confirmSignUp = () => {}
+
+    forgotPassword = () => {}
 }

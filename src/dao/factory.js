@@ -12,6 +12,9 @@ switch (config.persistence) {
         const { default: ContactsMemory } = await import("./memory/contacts.memory.js")
         Contacts = ContactsMemory
         break
+    case "MYSQL":
+        kjhasdfa
+        break;
 
     default:
 

@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.listen(port, () => {
-    console.log(`Servidor corriendo en el puerto ${port}`)
+    console.log(`Servidor corriendo en el puerto ${port || 3030}`)
 })
 
 app.use("/contacts", contactsRouter)

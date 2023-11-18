@@ -6,4 +6,8 @@ export default class Contacts {
     get = () => {
         return this.data
     }
+
+    create = (contact) => {
+        this.data.push(contact)
+    }
 }

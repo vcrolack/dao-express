@@ -6,11 +6,12 @@ export default class Contacts {
     }
 
     get = async () => {
-        let contacts = await contactsModel.find()
-        return contacts
+      const query = 'SELECT * FROM contacts';
+      const result = await executeQuery(query)
+      return result
     }
 
     create = async (contact) => {
-        const newContact = await contactsModel.create({contact})
+
     } 
 }
